@@ -12,7 +12,7 @@
  * Time: 19:34
  */
 
-namespace Max;
+namespace Matthew;
 
 
 class Weapon

@@ -11,6 +11,7 @@
  * Date: 22.04.2020
  * Time: 19:47
  */
+namespace Matthew\User;
 
 class HP
 {
