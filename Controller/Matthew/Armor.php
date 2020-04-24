@@ -12,10 +12,15 @@
  * Time: 19:34
  */
 
-namespace Matthew;
+namespace App\Matthew;
 
+
+use App\Max\Text;
 
 class Armor
 {
-
+    public function __construct()
+    {
+        (new Text());
+    }
 }

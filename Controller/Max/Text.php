@@ -8,12 +8,17 @@
  * поддерживающий твой код, - буйный психопат,
  * знающий, где ты живешь.
  * User: Max
- * Date: 22.04.2020
- * Time: 19:47
+ * Date: 24.04.2020
+ * Time: 18:28
  */
-namespace Matthew\User;
 
-class HP
+namespace App\Max;
+
+
+class Text
 {
-
+//    public function __construct()
+//    {
+//        echo __FILE__;
+//    }
 }

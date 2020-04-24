@@ -1,28 +1,24 @@
 <pre>
 <?php
+require '../vendor/autoload.php';
 
-use Matthew\Armor;
-use Matthew\User\Hp;
-use Max\User;
+use App\Matthew\Armor;
+use App\Matthew\User\Hp;
+use App\Max\User;
+use App\View;
 
-spl_autoload_register(function ($class){
-    $path = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
-    if (file_exists($path)){
-        require $path;
-    }else{
-        throw new \RuntimeException(sprintf('This %s file no found!', $path));
-    }
-});
 
 try {
-    $array = [
-        $matthew = new User(),
-        $class = new User(),
-        $weapon = new \Matthew\Weapon(),
-        $armor = new Armor(),
-        $hp = new HP()
-    ];
-    var_dump($array);
+//    $array = [
+//        $matthew = new User(),
+//        $class = new User(),
+//        $weapon = new App\Matthew\Weapon(),
+//        $armor = new Armor(),
+//        $hp = new HP()
+//    ];
+    $array = new View();
+
+//    var_dump($array);
 }catch (Exception $exception){
     echo $exception->getMessage();
 }

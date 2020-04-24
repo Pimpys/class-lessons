@@ -12,7 +12,7 @@
  * Time: 19:34
  */
 
-namespace Matthew;
+namespace App\Matthew;
 
 
 class Weapon

@@ -11,7 +11,7 @@
  * Date: 22.04.2020
  * Time: 19:08
  */
-namespace Max;
+namespace App\Max;
 
 class User
 {
