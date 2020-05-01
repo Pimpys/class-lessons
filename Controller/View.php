@@ -19,21 +19,22 @@ class View
 
     public function __construct()
     {
-        $this->name =  __FILE__;
+//        $this->name =  __FILE__;
+        $this->name =  null;
     }
 
-    public function __toString(): string
+//    public function __toString(): string
+//    {
+//        return $this->name;
+//    }
+
+    public function getName(): ?string
     {
         return $this->name;
     }
 
-    public function getName(): string
-    {
-        return $this->name;
-    }
 
-
-    public function setName(string $name)
+    public function setName(?string $name)
     {
         $this->name = $name;
     }

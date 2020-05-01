@@ -16,9 +16,10 @@ try {
 //        $armor = new Armor(),
 //        $hp = new HP()
 //    ];
-    $array = new View();
-
+    $view = new View();
+    $view->setName('null');
+    echo $view->getName();
 //    var_dump($array);
-}catch (Exception $exception){
+}catch (Throwable $exception){
     echo $exception->getMessage();
 }
