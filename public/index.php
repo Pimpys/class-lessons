@@ -18,8 +18,10 @@ try {
 //    ];
     $view = new View();
     $view->setName('null');
-    echo $view->getName();
+//    echo $view->getName();
 //    var_dump($array);
+//    echo Вывести дату в произвольном формате, с надписью: Сегодня "" года
+    echo "Сегодня  года";
 }catch (Throwable $exception){
     echo $exception->getMessage();
 }
