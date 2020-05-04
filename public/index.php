@@ -1,8 +1,9 @@
 <pre>
 <?php
-require '../vendor/autoload.php';
-
+chdir(dirname(__DIR__));
+require 'vendor/autoload.php';
 use App\Matthew\Armor;
+use App\Matthew\ArrayController;
 use App\Matthew\User\Hp;
 use App\Max\User;
 use App\View;
@@ -21,7 +22,9 @@ try {
 //    echo $view->getName();
 //    var_dump($array);
 //    echo Вывести дату в произвольном формате, с надписью: Сегодня "" года
-    echo "Сегодня  года";
+    $printer = new ArrayController(require 'include/array.php');
+    $printer->printArray();
+    echo $printer;
 }catch (Throwable $exception){
     echo $exception->getMessage();
 }
