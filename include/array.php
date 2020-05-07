@@ -34,5 +34,6 @@ return [
         'contact' => 'Контакты',
         'body' => 'Содержание',
         'answer' => 'Ответ',
-    ]
+    ],
+    new DateTime()
 ];

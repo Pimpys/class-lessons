@@ -35,8 +35,20 @@ class ArrayController
         //$this->array; - в данном случае, это тоже самое как $array[];
         //И в цикл, массив должен приходить именно так: $this->array
         //Надо перебрать его тут.
-        //Это надо удалить:
-        var_dump($this->array);
+        foreach ($this->array as $value){
+            if (is_array($value)){
+                foreach ($value as $item){//array
+
+                    echo $item . PHP_EOL;
+
+                }
+            }elseif (is_string($value)){
+                echo $value . PHP_EOL; //string
+            }
+            else{
+                throw new \Exception(sprintf('Wrong!!!'));
+            }
+        }
     }
 
     public function __toString(): string
