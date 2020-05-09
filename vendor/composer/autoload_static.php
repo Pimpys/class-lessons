@@ -4,9 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4169667efb339a8df504e42806fbe20a
+class ComposerStaticInitf909671fdcdcabe0a255ce363bedc258
 {
     public static $prefixLengthsPsr4 = array (
+        'K' => 
+        array (
+            'Knp\\Menu\\' => 9,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -14,17 +18,21 @@ class ComposerStaticInit4169667efb339a8df504e42806fbe20a
     );
 
     public static $prefixDirsPsr4 = array (
+        'Knp\\Menu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-menu/src/Knp/Menu',
+        ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Controller',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4169667efb339a8df504e42806fbe20a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4169667efb339a8df504e42806fbe20a::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf909671fdcdcabe0a255ce363bedc258::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf909671fdcdcabe0a255ce363bedc258::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
